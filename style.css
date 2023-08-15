@@ -1,0 +1,128 @@
+a{
+    text-decoration: none;
+}
+
+.rh{
+    color: rgb(0, 255, 34);
+    margin-bottom: 10px;
+    
+}
+
+i.map{
+    width: 500px;
+    height: 500px;
+    object-fit: cover;    
+}
+
+.video, .audio{
+    width: 500px;
+}
+
+.list{
+    list-style-type: square;
+}
+
+table, th, td{
+    border: 1px solid grey;
+    padding: 5px;
+    border-collapse: collapse;
+}
+
+tfoot{
+    text-align: left;
+    background-color: aqua;
+}
+tbody{
+    color: blue;
+}
+thead{
+    background-color: brown;
+    color: white;
+}
+
+.product{
+    background-color:gold;
+    width: 300px;
+    padding: 3px;
+    margin-bottom: 5px;
+}
+.products{
+    background-color:rgb(5, 84, 90);
+    width: 300px;
+    padding:3px;
+    color: white;
+}
+.product h6, .products h6{
+    font-size: medium;
+}
+img{
+    object-fit: cover;
+}
+html{
+    font-size: 62.5%;
+}
+.jox{
+    width: 10rem;
+    height: 100vh;
+    background-color: gold;
+    border-top: 5px solid red;
+}
+
+
+/*boxes css*/
+.boxes{
+    border:  10px solid lightgrey;
+    position: relative;
+    
+} 
+
+.box{
+    width: 15rem;
+    height: 15rem;
+   
+}
+
+.box1{
+    background-color: gold;
+}
+
+.box2{
+    background-color:  rgb(255, 0, 13);
+    position: fixed;
+    top: 0;
+    left: 8rem;
+    right: 8rem;
+    width: auto;
+    
+    z-index: 1;
+    
+}
+
+.box3{
+    background-color: blueviolet;
+}
+
+.tweet{
+    border: 3px solid lightgrey;
+}
+
+/* used to prevent collapse of avatar*/
+.clearfix::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+
+
+.avatar{
+    width: 8rem;
+    height: 8rem;
+    background-color: gold;
+    float: left;
+    margin-right: 5px;
+}
+
+.clear{
+    clear: both;
+}

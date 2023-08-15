@@ -1,0 +1,43 @@
+.container{
+display: flex;
+flex-direction: column;
+}
+
+.box{
+    background-color: gold;
+    padding: 1rem;
+}
+
+.box:nth-of-type(2){/* to taeget the next paragraph*/
+    background-color: aquamarine;
+}
+
+
+@media screen and (min-width: 600px){
+    .container{
+        flex-direction: row;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .container{
+        flex-direction:column ;
+    }
+
+    .box{
+        background-color: dodgerblue;
+    }
+}
+
+/*for printing docs from webaites*/
+@media print {
+
+    body{
+        font-size: 12pt;
+    }
+
+    .box{
+        padding: 0.5cm;
+    }
+    
+}

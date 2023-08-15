@@ -1,0 +1,54 @@
+body{
+    box-sizing: border-box;
+}
+
+thead, tbody, tfoot{
+    text-align: left;   
+}
+
+thead, tfoot{    
+    background-color: #427fef;
+    color: white;     
+
+}
+
+table, th, td{
+    border:   #c4dcf3;
+    padding: 5px;
+    border-collapse:collapse ;    
+}
+
+tbody > tr:nth-child(odd){
+    background-color:#eef7ff ;
+}
+
+
+.box{
+    width: 300px;
+    height: 300px;
+    background-color: tomato;
+    
+    margin-left: 5px;
+    box-shadow: 10px 10px lightgrey;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.box1{
+    width: 200px;
+    height: 100px;
+    overflow: hidden auto;
+    background-color: gold;
+    margin-bottom: 20px;
+   
+}
+
+.box2{
+    width: 50vw; /* relative measurement*/
+    height: 100vh;
+    border-top: 25px solid red;
+    border-bottom: 20px solid gray;
+    border-left: 30px solid blue;
+    border-right: 20px solid green;
+    background-color: gold;
+}
