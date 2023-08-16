@@ -1,0 +1,49 @@
+/* download open sans fonts from https://www.fontsquirrel.com/
+1.copy regular and normal into webconverter 
+2. copy convert file into css folder in a separate folder
+3. copy the style sheets on top of the style sheets as below
+4. direct your style to the file as - fonts/open-sans to 
+reference it.
+5. to use this new fonts add the name opensans to body styles
+
+
+
+
+*/
+
+
+
+@font-face {
+    font-family: 'opensans';
+    src: url('fonts/open-sans/opensans-regular-webfont.woff2') format('woff2'),
+         url('fonts/open-sans/opensans-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'opensans';
+    src: url('fonts/open-sans/opensans-bold-webfont.woff2') format('woff2'),
+         url('fonts/open-sans/opensans-bold-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+
+}
+
+
+
+body {
+    margin: 10px;
+    font-family: 'opensans', Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-weight: 400;
+}
+
+p {
+    font-weight: normal;
+    font-style: italic;
+    font-size: 1rem;
+    color: #333;
+}
