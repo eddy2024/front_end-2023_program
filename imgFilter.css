@@ -1,0 +1,7 @@
+body {
+    
+}
+
+.imgFilter:hover {
+    filter: grayscale(50% ) blur(3px);
+}

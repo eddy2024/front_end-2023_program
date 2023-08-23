@@ -1,0 +1,14 @@
+body {
+
+    /* background: url(img/bg-paper@2x.jpg); */
+    background: url(img/bg-sanfrancisco.jpg);
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+h1 {
+    color: white;
+}
+
