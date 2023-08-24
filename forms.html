@@ -68,15 +68,51 @@
     <h1>Check Boxes</h1>
     <form action="">
         <div>
-            <input type="checkbox" id="front-end" />
+            <input type="checkbox" id="front-end"  disabled/>
             <label class="label-inline" for="front-end">Front-end</label>
         </div>
         <div>
             <input type="checkbox" id="back-end" checked />
             <label class="label-inline" for="back-end">Back-end</label>
         </div>
+    </form>
 
+    <h1>Radio Button</h1>
+    <form action="">
+        <div>
+            <input type="radio" name="membership" id="silver" disabled>
+            <label  class="label-inline" for="membership">Silver</label>
+        </div>
+        <div>
+            <input type="radio" name="membership" id="gold" checked>
+            <label class="label-inline" for="membership">Gold</label>
+
+        </div>
+
+
+        <h1>Data input file</h1>
+        
+        <input type="file" accept=" .png, .jpg  , video, audio" multiple>
     </form>
     
+
+    <h1>Group Related Fields</h1>
+    <form action="">
+        <section>
+            <h2>Billing Address</h2>
+            <input type="text" />
+            <input type="text" />
+            <input type="text" />
+        </section>
+        <fieldset>
+            <legend>Payment</legend>
+            <input type="text">
+            <input type="text" >
+            <input type="text">
+        </fieldset>
+    </form>
+
+
+
 </body>
 </html>
