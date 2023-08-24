@@ -11,13 +11,14 @@ label {
     display: block;
 }
 
-input[type='text'],
+input[type='text'], [type='number'],
      [type='email'],
      [type='date'], [type='password']{
     border: 1px solid #ccc;
     border-radius:  5px;
     padding: 0.5rem 0.7rem;
     transition: border-color 0.15s, box-shadow 0.15s ;    
+    width: 50%;
 }
 
 input[type='text']:focus, 
@@ -27,8 +28,7 @@ input[type='text']:focus,
         box-shadow: 0 0 0 4px rgba(24, 117, 255, 0.25);
 }
 
-input {
-    width: 50%;}
+
 
 button {
     cursor: pointer;

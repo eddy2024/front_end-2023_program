@@ -1,118 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>::Forms</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
-    <link rel="stylesheet" href="formStyle.css">
-    
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css"
+    />
+    <link rel="stylesheet" href="formStyle.css" />
+  </head>
+  <body>
     <h1>Forms Tutorial</h1>
     <form action="">
-        <div class="form-group">
-            <label for="name">Name</label>
-            <input type="text" id="name" placeholder="Enter your name">
-        </div>
-        <div class="form-group">
-            <label for="email">Email</label>
-            <input type="email"  id="email" placeholder="Enter your name">        </div>
-        
-        <div class="form-group">
-            <label for="date">Date</label>
-            <input type="date" id="date" placeholder="Enter your date of birth" ></div>
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Enter your name" required />
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Enter your name" required />
+      </div>
 
-            <div class="form-group">
-                <label for="password">Password</label>
-                <input type="password" id="password" placeholder="enter your password">
-            </div>
+      <div class="form-group">
+        <label for="date">Date</label>
+        <input
+          type="date"
+          id="date"
+          placeholder="Enter your date of birth"
+          required
+        />
+      </div>
 
-            <textarea name="comments" id="commments" cols="30" rows="10" disabled readonly >
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input
+          type="password"
+          id="password"
+          placeholder="enter your password"
+          required
+        />
+      </div>
+
+      <textarea
+        name="comments"
+        id="commments"
+        cols="30"
+        rows="10"
+        disabled
+        readonly
+      >
                 Your comments are disabled
-            </textarea>         
-            
+            </textarea
+      >
 
+      <button type="submit">Register</button>
+      <button type="reset">Clear</button>
 
-        <button type="submit">Register</button>
-        <button type="reset" >Clear</button>
-
-        
-        <h1>Datalist</h1>
-        <label for="countries">Countries</label>
-        <input type="text" list="countries" />
-        <datalist id="countries">
-            <option>Australia</option>
-            <option>Germany</option> 
-            <option>Ghana</option>
-            <option>United Kingdom</option>
-        </datalist>
+      <h1>Datalist</h1>
+      <label for="countries">Countries</label>
+      <input type="text" list="countries" />
+      <datalist id="countries">
+        <option>Australia</option>
+        <option>Germany</option>
+        <option>Ghana</option>
+        <option>United Kingdom</option>
+      </datalist>
     </form>
 
     <h1>Drop Downlist</h1>
     <form action="">
-        <select name="" id="">
-            <optgroup label="Front-end Courses">
-                <option value="1">HTML</option>
-                <option value="2">CSS</option>
-                <option value="3">JavaScript</option>
-            </optgroup>
-            <optgroup label="Back-end Courses">
-                <option value="1">NodeJS</option>
-                <option value="2">ASP.NET</option>
-                <option value="3">Django</option>
-            </optgroup>
-        </select>
+      <select name="" id="">
+        <optgroup label="Front-end Courses">
+          <option value="1">HTML</option>
+          <option value="2">CSS</option>
+          <option value="3">JavaScript</option>
+        </optgroup>
+        <optgroup label="Back-end Courses">
+          <option value="1">NodeJS</option>
+          <option value="2">ASP.NET</option>
+          <option value="3">Django</option>
+        </optgroup>
+      </select>
     </form>
 
     <h1>Check Boxes</h1>
     <form action="">
-        <div>
-            <input type="checkbox" id="front-end"  disabled/>
-            <label class="label-inline" for="front-end">Front-end</label>
-        </div>
-        <div>
-            <input type="checkbox" id="back-end" checked />
-            <label class="label-inline" for="back-end">Back-end</label>
-        </div>
+      <div>
+        <input type="checkbox" id="front-end" disabled />
+        <label class="label-inline" for="front-end">Front-end</label>
+      </div>
+      <div>
+        <input type="checkbox" id="back-end" checked />
+        <label class="label-inline" for="back-end">Back-end</label>
+      </div>
     </form>
 
     <h1>Radio Button</h1>
     <form action="">
-        <div>
-            <input type="radio" name="membership" id="silver" disabled>
-            <label  class="label-inline" for="membership">Silver</label>
-        </div>
-        <div>
-            <input type="radio" name="membership" id="gold" checked>
-            <label class="label-inline" for="membership">Gold</label>
+      <div>
+        <input type="radio" name="membership" id="silver" disabled />
+        <label class="label-inline" for="membership">Silver</label>
+      </div>
+      <div>
+        <input type="radio" name="membership" id="gold" checked />
+        <label class="label-inline" for="membership">Gold</label>
+      </div>
 
-        </div>
+      <h1>Data input file</h1>
 
-
-        <h1>Data input file</h1>
-        
-        <input type="file" accept=" .png, .jpg  , video, audio" multiple>
+      <input type="file" accept=" .png, .jpg  , video, audio" multiple />
     </form>
-    
 
     <h1>Group Related Fields</h1>
     <form action="">
-        <section>
-            <h2>Billing Address</h2>
-            <input type="text" />
-            <input type="text" />
-            <input type="text" />
-        </section>
-        <fieldset>
-            <legend>Payment</legend>
-            <input type="text">
-            <input type="text" >
-            <input type="text">
-        </fieldset>
+      <section>
+        <h2>Billing Address</h2>
+        <input type="text" />
+        <input type="text" />
+        <input type="text" />
+      </section>
+
+      <fieldset>
+        <legend>Payment</legend>
+        <input type="text" />
+        <input type="text" />
+        <input type="text" />
+      </fieldset>
     </form>
 
+    <h1>Hidden Fields</h1>
+    <form action="https://formspree.io/f/meqbgrgk" method="POST">
+      <input type="hidden" value="1234" />
+    </form>
 
+    <h1>Data Validation</h1>
 
-</body>
+    <form action="https://formspree.io/f/meqbgrgk" method="POST">
+      <section>
+        <label for="name">Full Name </label>
+        <input 
+            type="text" 
+            name="full_name"
+            placeholder="Enter your name" 
+            required />
+        <label for="age">Age</label>
+        <input
+          type="number"
+          name="age"
+          placeholder="Enter your age"
+          minlength="5"
+          maxlength="24"
+          required
+        />
+        <label for="telephone">Contact Number </label>
+        <input
+          type="number"
+          name="telephone"
+          maxlength="10"
+          placeholder="Enter your contact number"
+          required
+        />
+        <button type="submit">Apply</button>
+      </section>
+    </form>
+  </body>
 </html>

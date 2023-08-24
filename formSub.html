@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>::Forms Submission</title>
+   
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css"
+    />
+    <link rel="stylesheet" href="formSub.css" />
+  </head>
+  <body>
+    <h1>Form Submission - Backend Connection</h1>
+
+    <form action="https://formspree.io/f/meqbgrgk" method="POST">
+      <label for="fname">First Name</label>
+      <input 
+        type="text" 
+        name="fname" 
+        placeholder="enter first name" 
+        required />
+      <label for="lname">Last Name</label>
+      <input 
+        type="text" 
+        name="lname" 
+        placeholder="enter last name" 
+        required />
+      <label for="work">Profession</label>
+      <input
+        type="text"
+        name="work"
+        placeholder="enter your professional"
+        required
+      />
+      <label for="age">Age</label>
+      <input 
+        type="number" 
+        name="age"  
+        placeholder="enter your age" 
+        required/>
+    <label for="country">Country</label>
+    <input 
+        type="text" 
+        name="country" 
+        placeholder="enter your country" 
+        list="countries"
+        required/>     
+        <datalist id="countries">
+        <option>Australia</option>
+        <option>Germany</option>
+        <option>Ghana</option>
+        <option>United Kingdom</option>
+      </datalist><br/>
+
+      <button type="submit">Register</button>
+    </form>
+  </body>
+</html>
