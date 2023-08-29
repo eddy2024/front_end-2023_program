@@ -1,0 +1,19 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.box {
+    width: 200px;
+    height: 150px;
+    background: gold;
+}
+/* 2D - transformations*/
+.box:hover {
+    /* transform: skew(-15deg) */
+    /* transform: translate(10px, 10px) ; */
+    /* transform: rotate(45deg) translateX(50px); */
+    transform: translateX(50px) rotate(45deg) ;
+}
